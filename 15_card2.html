@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card-2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #8BC6EC;
+            background-image: linear-gradient(135deg, #8BC6EC 0%, #ffffff 99%, #9599E2 100%);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+        }
+        .card{
+            width: 330px;
+            height: 450px;
+            position: relative;
+            background: rgb(255,255,255);
+            background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 13%, rgba(255,255,255,1) 92%);
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            gap: 1.2em;
+            padding: 0px;
+            border-radius: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            transition: all 1s ease-in-out 0s;
+
+        }
+        .card:hover{
+            transform: scale(1.1);
+        }
+        #blockchain{
+            width: 328px;
+            height: 150px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            
+        }
+        .card p{
+            text-align: center;
+            padding-left: 20px;
+        }
+        .plan{
+            width: 280px;
+            height: 50px;
+            padding: 2%;
+            padding-right: 20px;
+            background: rgb(160,219,230);
+            background: linear-gradient(90deg, rgba(160,219,230,1) 0%, rgba(160,219,230,1) 13%, rgba(160,219,230,1) 92%);
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        
+        #music{
+            width: 43px;
+            border-radius: 15px;
+        }
+        .left{
+            display: flex;
+            justify-content: space-around;
+        }
+        #payment{
+            width: 85%;
+            height: 50px;
+            border-radius: 10px;
+            color: azure;
+            background: rgb(49,110,122);
+            background: linear-gradient(90deg, rgba(49,110,122,1) 0%, rgba(49,110,122,1) 13%, rgba(49,110,122,1) 92%);
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            transition: all 0.7s ease-out 0s;
+        }
+        #payment:hover{
+            transform: scale(1.1);
+        }
+        #cancel a{
+            text-decoration: none;
+            color: rgb(69, 72, 73);
+            font-weight: bold;
+            
+        }
+        #cancel a:hover{
+            color: rgb(51, 155, 120);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img id="blockchain"
+             src="\images\card1.jpeg"
+              alt="">
+            <h3>Order Summary</h3> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, at!</p>
+            <div class="plan">
+                   <div class="left">
+                       <div >
+                         <img id="music" src="\images\music.jpeg" alt="">
+                       </div>
+                       <div id="text">
+                          <p>Annual Plans</p>
+                          <p>$99.99/year</p>
+                       </div>
+                   </div>
+                   <div class="right"> 
+                       <a href="#">Change</a>
+                   </div>
+            </div> 
+            <button id="payment">Proceed To Pay</button>
+            <div id="cancel">
+                  <a href="#">Cancel Order</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

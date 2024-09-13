@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background: rgb(49,110,122);
+            background: linear-gradient(90deg, rgba(49,110,122,1) 0%, rgba(49,110,122,1) 13%, rgba(49,110,122,1) 92%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 55%;
+            height: 50%;
+            background: rgb(104,7,89);
+            background: linear-gradient(90deg, rgba(104,7,89,1) 0%, rgba(104,7,89,1) 13%, rgba(104,7,89,1) 92%);
+            border-radius: 20px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            display: flex;
+            transition: all 5s ease-in;
+        }
+        .card:hover{
+            /* transform: scale(1.05);  */
+            transform: rotate(90deg); 
+        }
+        .left{
+            padding-top: 50px;
+            padding-left: 25px;
+            padding-right: 20px;
+            color: aliceblue;
+            gap: 2em;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .left p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: larger;
+        }
+        #right{
+            height: 388px;
+            width: 420px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .interaction{
+            display: flex;
+            gap: 2em;
+            justify-content: space-evenly;
+            align-items: end;
+            
+
+        }
+        .interaction p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="left">
+                <h1>Get insights that helps your Business Grow</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi aspernatur magnam sint rem adipisci, quam fugiat. Pariatur itaque hic ullam!</p>
+                <div class="interaction">
+                    <div id="comment">
+                        <p >10K+</p>
+                        <p>Comments</p>
+                    </div>
+                    <div id="users">
+                        <p>214</p>
+                        <p>Paid Users</p>
+                    </div>
+                    <div id="views">
+                        <p>12M+</p>
+                        <p>Views</p>
+                    </div>
+                </div>
+            </div>
+            <div >
+                <img id="right" src="\images\blockchain.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
